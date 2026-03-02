@@ -1,0 +1,47 @@
+/* ---------------Box Sizing----------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* --------------Utility Classes ---------------- */
+
+/* Skip link utility: hidden until focused */
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Make skip link visible when keyboard users tab to it */
+.visually-hidden:focus,
+.visually-hidden:focus-visible {
+  clip: auto;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 10px 14px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #ffffff;
+  color: #172635;
+  z-index: 9999;
+  border-radius: 6px;
+}
+
+/* ------------------ Gloabal Styles --------------------- */
+
+body {
+  font-family: "Rubik", sans-serif;
+}
