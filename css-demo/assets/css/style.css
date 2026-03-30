@@ -9,8 +9,6 @@ html {
 }
 
 /* --------------Utility Classes ---------------- */
-
-/* Skip link utility: hidden until focused */
 .visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -23,7 +21,6 @@ html {
   width: 1px;
 }
 
-/* Make skip link visible when keyboard users tab to it */
 .visually-hidden:focus,
 .visually-hidden:focus-visible {
   clip: auto;
@@ -40,8 +37,264 @@ html {
   border-radius: 6px;
 }
 
-/* ------------------ Gloabal Styles --------------------- */
-
+/* ------------------ Global Styles --------------------- */
 body {
   font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #2d3142;
+  background-color: #f0ede8;
+  margin: 0;
+  padding: 0;
+
+  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+/* ------------------ Typography --------------------- */
+h1, h2, h3, h4 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+a {
+  color: #c4601a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* ------------------ Container --------------------- */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ------------------ Header --------------------- */
+header.primary {
+  grid-column: 1 / -1;
+  background-color: #1d2d44;
+  /* SVG background: subtle diagonal line pattern */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cline x1='0' y1='48' x2='48' y2='0' stroke='%23ffffff' stroke-width='1' stroke-opacity='0.06'/%3E%3Cline x1='-12' y1='48' x2='36' y2='0' stroke='%23ffffff' stroke-width='1' stroke-opacity='0.06'/%3E%3Cline x1='12' y1='48' x2='60' y2='0' stroke='%23ffffff' stroke-width='1' stroke-opacity='0.06'/%3E%3C/svg%3E");
+  color: #eef2f7;
+  padding: 2.5rem 1.5rem 0;
+  text-align: center;
+}
+
+header.primary h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.25rem;
+  color: #eef2f7;
+}
+
+header.primary h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header.primary h1 a:hover {
+  color: #e8813a;
+}
+
+header.primary .subtitle {
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8fa8c4;
+  margin-top: 0;
+  margin-bottom: 1.75rem;
+}
+
+/* ------------------ Navigation --------------------- */
+nav.primary {
+  background-color: #16253a;
+  padding: 0;
+}
+
+nav.primary ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav.primary ul li a {
+  display: block;
+  color: #adc0d8;
+  padding: 0.9rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+nav.primary ul li a:hover {
+  color: #e8813a;
+  border-bottom-color: #e8813a;
+  text-decoration: none;
+}
+
+/* ------------------ Main Content --------------------- */
+main#main-content {
+  grid-column: 1;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* Intro section */
+#content {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d4cfc8;
+}
+
+#content h2 {
+  font-size: 1.75rem;
+  color: #1d2d44;
+  margin-bottom: 0.75rem;
+}
+
+/* ------------------ Blog / Articles --------------------- */
+#blog h2 {
+  font-size: 1.5rem;
+  color: #1d2d44;
+  margin-bottom: 1.5rem;
+}
+
+article.post {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-left: 4px solid #e8813a;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+article.post header {
+  margin-bottom: 0.75rem;
+}
+
+article.post .post-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #8fa8c4;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+article.post figure {
+  margin: 0 0 0.75rem 0;
+}
+
+article.post figure img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+}
+
+article.post figure figcaption {
+  font-size: 0.8rem;
+  color: #888680;
+  margin-top: 0.35rem;
+}
+
+article.post h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+article.post h3 a {
+  color: #1d2d44;
+}
+
+article.post h3 a:hover {
+  color: #e8813a;
+}
+
+footer.post-meta {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #ede9e3;
+  font-size: 0.85rem;
+  color: #888680;
+}
+
+footer.post-meta a {
+  color: #c4601a;
+}
+
+/* ------------------ Aside / Sidebar --------------------- */
+aside {
+  grid-column: 2;
+  background-color: #1d2d44;
+  padding: 2rem 0;
+}
+
+aside .container {
+  padding: 0 1.25rem;
+}
+
+article.widget {
+  background-color: #253d5c;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: #ccdaeb;
+}
+
+article.widget header h2 {
+  font-size: 1rem;
+  color: #eef2f7;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e8813a;
+  display: inline-block;
+}
+
+article.widget p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: #adc0d8;
+}
+
+article.widget a {
+  color: #e8813a;
+  font-weight: 500;
+}
+
+article.widget footer {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #5f7a97;
+}
+
+/* ------------------ Footer --------------------- */
+footer.primary {
+  grid-column: 1 / -1;
+  background-color: #111d2b;
+  color: #5f7a97;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+}
+
+footer.primary p {
+  margin: 0;
 }
