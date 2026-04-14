@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3 - Absolute</title>
+  <style type="text/css">
+    html { box-sizing: border-box; }
+    *, *:before, *:after { box-sizing: inherit; }
+
+    body {
+      background-color: #ECECEC;
+      font-weight: bold;
+      font-family: Tahoma, Geneva, sans-serif;
+      color: #FFF;
+      text-align: center;
+      line-height: 24px;
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    #navy  { background-color: #001f3f; }
+    #teal  { background-color: #39CCCC; }
+    #blue  { background-color: #0074D9; }
+    #aqua  { background-color: #7FDBFF; }
+    #footer { background-color: #666; }
+
+    h1 {
+      color: #000;
+      font-weight: normal;
+      padding: 30px;
+      margin: 0;
+    }
+
+    
+    #navy, #teal, #blue, #aqua {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      line-height: 160px;
+      text-shadow: 2px 2px #000;
+    }
+
+    #navy  { top: 0;    left: 0;  }
+    #teal  { top: 0;    right: 0; }
+    #blue  { bottom: 0; left: 0;  }
+    #aqua  { bottom: 0; right: 0; }
+
+    /* Wrapper centered on page, holds footer */
+    #wrapper {
+      background-color: #FFF;
+      border: 1px solid #c0c0c0;
+      width: 800px;
+      margin: 0 auto;
+      position: relative;
+      height: 200px;
+      text-shadow: 2px 2px #000;
+    }
+
+    /* Footer centered inside wrapper */
+    #footer {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      line-height: 160px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercise</h1>
+  <div id="navy">Navy</div>
+  <div id="teal">Teal</div>
+  <div id="blue">Blue</div>
+  <div id="aqua">Aqua</div>
+
+  <section id="wrapper">
+    <div id="footer">Footer</div>
+  </section>
+</body>
+</html>
