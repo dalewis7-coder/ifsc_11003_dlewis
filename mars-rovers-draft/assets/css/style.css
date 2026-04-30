@@ -1,0 +1,99 @@
+/* styles.css - Mars Rovers Project DRAFT */
+/* TODO: clean this up before submitting */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003399;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+header p {
+    color: #ccc;
+    margin: 5px 0 0 0;
+}
+
+/* navigation */
+nav {
+    background-color: red;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* main content */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #ff6600;
+    /* TODO: decide on a better color */
+}
+
+p {
+    line-height: 1.5;
+    color: #ddd;
+}
+
+/* rover images - need to fix sizing later */
+img {
+    width: 100%;
+    /* TODO: add max-height */
+}
+
+.rover-section {
+    border: 1px solid #555;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* table - added quickly, needs styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+table th {
+    background-color: #003399;
+}
+
+footer {
+    background-color: #003399;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.85rem;
+}
+
+/* TODO: add media queries for mobile */
+/* TODO: add dark mode toggle */
+/* TODO: style the FAQ page */
