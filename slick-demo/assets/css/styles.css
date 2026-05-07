@@ -1,0 +1,158 @@
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* --- Header --- */
+header {
+  background-color: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  letter-spacing: 0.03em;
+}
+
+/* --- Main --- */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* --- Carousel Wrapper --- */
+.carousel-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* --- Slides --- */
+.fade.container {
+  max-width: 960px;
+  margin: 2rem auto;
+}
+
+.fade.container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* --- Slide Caption --- */
+.slide-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.72));
+  color: #fff;
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+.slide-caption h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.slide-caption p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* --- Slick Arrow Overrides --- */
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-next:focus {
+  background-color: rgba(0, 0, 0, 0.85);
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.slick-prev {
+  left: 12px;
+}
+
+.slick-next {
+  right: 12px;
+}
+
+/* --- Slick Dots Overrides --- */
+.slick-dots {
+  bottom: -36px;
+}
+
+.slick-dots li button::before {
+  font-size: 10px;
+  color: #555;
+  opacity: 0.6;
+}
+
+.slick-dots li.slick-active button::before {
+  color: #1a1a2e;
+  opacity: 1;
+}
+
+/* Accessible focus ring for dots */
+.slick-dots li button:focus {
+  outline: 3px solid #1a1a2e;
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+/* Extra space below carousel for dots */
+.slick-carousel {
+  margin-bottom: 3rem;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 1.25rem;
+  background-color: #1a1a2e;
+  color: #ccc;
+  font-size: 0.85rem;
+  margin-top: 3rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .slide img {
+    height: 260px;
+  }
+
+  .slide-caption h2 {
+    font-size: 1.1rem;
+  }
+
+  .slide-caption p {
+    font-size: 0.85rem;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+  }
+}

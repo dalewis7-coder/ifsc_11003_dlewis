@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="A complete history of NASA Mars rover missions including launch dates, landing sites, major discoveries, and design features." />
+    <meta name="keywords" content="Mars rover history, Curiosity landing, Perseverance mission, Spirit Opportunity, Mars exploration timeline" />
+    <title>Mission History - NASA Mars Rovers</title>
+    <link rel="stylesheet" href="/mars-rovers/assets/css/styles.css" />
+</head>
+<body>
+
+    <header>
+        <img src="/mars-rovers/assets/img/nasa-logo.jpg" alt="NASA logo" />
+        <div>
+            <h1>NASA Mars Rovers</h1>
+            <p>Robotic Explorers on the Red Planet</p>
+        </div>
+        <button id="toggleBtn" onclick="toggleMode()">
+            Light Mode
+        </button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/mars-rovers/index.html">Home</a></li>
+            <li><a href="/mars-rovers/mission-history.html" class="active">Mission History</a></li>
+            <li><a href="/mars-rovers/faq.html">FAQ</a></li>
+            <li><a href="https://mars.nasa.gov" target="_blank">NASA Mars Website</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Mission History</h2>
+            <p>
+                A detailed look at each Mars rover mission, from goals and launch details to major
+                discoveries and design highlights.
+            </p>
+        </section>
+
+        <section id="curiosity">
+            <h2>Curiosity (2011 - Present)</h2>
+
+            <img class="mission-img" src="/mars-rovers/assets/img/curiosity.jpg" alt="Curiosity rover on Mars" />
+
+            <h3>Mission Goals</h3>
+            <p>
+                Curiosity's primary goal is to determine whether Mars ever had conditions capable
+                of supporting microbial life. It also studies the planet's geology, climate, and
+                radiation environment to prepare for future human missions.
+            </p>
+
+            <h3>Launch and Landing</h3>
+            <ul>
+                <li><strong>Launch date:</strong> November 26, 2011</li>
+                <li><strong>Landing date:</strong> August 6, 2012</li>
+                <li><strong>Landing site:</strong> Gale Crater, near Mount Sharp</li>
+                <li><strong>Landing method:</strong> Sky crane descent system</li>
+            </ul>
+
+            <h3>Major Discoveries</h3>
+            <ul>
+                <li>Confirmed Gale Crater once held a freshwater lake with habitable chemistry</li>
+                <li>Detected complex organic molecules in 3-billion-year-old rock samples</li>
+                <li>Measured seasonal changes in atmospheric methane</li>
+                <li>Documented radiation levels important for planning crewed missions</li>
+            </ul>
+
+            <h3>Key Design Features</h3>
+            <p>
+                Curiosity weighs 899 kg and is powered by a nuclear RTG, so it does not rely on
+                sunlight. It carries 17 cameras, a ChemCam laser for remote rock analysis, and
+                a drill for collecting powdered rock samples. It remains active as of 2024.
+            </p>
+        </section>
+
+        <section id="perseverance">
+            <h2>Perseverance (2020 - Present)</h2>
+
+            <img class="mission-img" src="/mars-rovers/assets/img/perseverance.jpg" alt="Perseverance rover on Mars" />
+
+            <h3>Mission Goals</h3>
+            <p>
+                Perseverance is searching for signs of ancient microbial life. It is also caching
+                rock and soil samples for a future Earth return mission and testing technology
+                that will support future human exploration.
+            </p>
+
+            <h3>Launch and Landing</h3>
+            <ul>
+                <li><strong>Launch date:</strong> July 30, 2020</li>
+                <li><strong>Landing date:</strong> February 18, 2021</li>
+                <li><strong>Landing site:</strong> Jezero Crater, an ancient lake delta</li>
+                <li><strong>Landing method:</strong> Sky crane descent system</li>
+            </ul>
+
+            <h3>Major Discoveries</h3>
+            <ul>
+                <li>Successfully produced oxygen from the Martian atmosphere using the MOXIE instrument</li>
+                <li>Collected over 20 rock core samples sealed in tubes for future return to Earth</li>
+                <li>Deployed Ingenuity, which made the first powered flight on another planet</li>
+                <li>Identified organic-rich rock formations at a site called Hogwallow Flats</li>
+            </ul>
+
+            <h3>Key Design Features</h3>
+            <p>
+                Perseverance weighs 1,025 kg and shares Curiosity's basic design with significant
+                upgrades. It has 23 cameras, a coring drill for intact rock samples, ground-penetrating
+                radar called RIMFAX, and improved autonomous navigation. It also carried the
+                Ingenuity helicopter to Mars.
+            </p>
+        </section>
+
+        <section id="mer">
+            <h2>Spirit and Opportunity (2003 - 2010 / 2019)</h2>
+
+            <img class="mission-img" src="/mars-rovers/assets/img/opportunity.jpg" alt="Opportunity rover on Mars" />
+
+            <h3>Mission Goals</h3>
+            <p>
+                Spirit and Opportunity were sent to study the history of water on Mars. Their goal
+                was to find rocks and minerals that could only have formed in the presence of liquid
+                water.
+            </p>
+
+            <h3>Launch and Landing</h3>
+            <ul>
+                <li><strong>Spirit launch:</strong> June 10, 2003 | <strong>Landed:</strong> January 4, 2004 - Gusev Crater</li>
+                <li><strong>Opportunity launch:</strong> July 7, 2003 | <strong>Landed:</strong> January 25, 2004 - Meridiani Planum</li>
+                <li><strong>Landing method:</strong> Airbag bounce landing system</li>
+            </ul>
+
+            <h3>Major Discoveries</h3>
+            <ul>
+                <li>Opportunity found hematite "blueberries" that could only form in the presence of water</li>
+                <li>Spirit found silica-rich soil that required a wet environment to form</li>
+                <li>Both rovers confirmed that liquid water existed on ancient Mars</li>
+                <li>Opportunity drove over 45 km total, a surface record at the time</li>
+            </ul>
+
+            <h3>Key Design Features</h3>
+            <p>
+                Each rover weighed 185 kg and ran on solar panels. They carried a panoramic camera,
+                microscopic imager, spectrometers, and a rock abrasion tool. Spirit became stuck in
+                soft soil in 2009; Opportunity was lost to a global dust storm in 2018.
+            </p>
+        </section>
+
+        <section>
+            <h2>Mission Timeline</h2>
+            <p>Key dates across the history of Mars rover exploration:</p>
+
+            <div class="timeline">
+                <div class="timeline-event">
+                    <p class="date">July 4, 1997</p>
+                    <h3>Sojourner Lands on Mars</h3>
+                    <p>The first Mars rover arrives at Ares Vallis aboard the Mars Pathfinder mission.</p>
+                </div>
+
+                <div class="timeline-event">
+                    <p class="date">January 3, 2004</p>
+                    <h3>Spirit Lands at Gusev Crater</h3>
+                    <p>Spirit airbag-bounces to a landing and begins its 90-day mission.</p>
+                </div>
+
+                <div class="timeline-event">
+                    <p class="date">January 25, 2004</p>
+                    <h3>Opportunity Lands at Meridiani Planum</h3>
+                    <p>Opportunity lands and quickly finds evidence of ancient water.</p>
+                </div>
+
+                <div class="timeline-event">
+                    <p class="date">August 6, 2012</p>
+                    <h3>Curiosity Lands at Gale Crater</h3>
+                    <p>The sky crane delivers Curiosity after the famous "seven minutes of terror."</p>
+                </div>
+
+                <div class="timeline-event">
+                    <p class="date">February 18, 2021</p>
+                    <h3>Perseverance Lands at Jezero Crater</h3>
+                    <p>Perseverance arrives with the Ingenuity helicopter attached to its belly.</p>
+                </div>
+
+                <div class="timeline-event">
+                    <p class="date">April 19, 2021</p>
+                    <h3>Ingenuity's First Flight</h3>
+                    <p>Ingenuity makes the first powered, controlled flight on another planet.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>NASA Mars Rovers | Student Project</p>
+        <p>Contact: <a href="mailto:dalewis7@ualr.edu">dalewis7@ualr.edu</a></p>
+        <p class="disclaimer">
+            This website was created as a student project for educational purposes.
+            NASA is not affiliated with or endorsing this work.
+        </p>
+    </footer>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('light-mode');
+            var btn = document.getElementById('toggleBtn');
+            if (btn.textContent.trim() === 'Light Mode') {
+                btn.textContent = 'Dark Mode';
+            } else {
+                btn.textContent = 'Light Mode';
+            }
+        }
+    </script>
+
+</body>
+</html>

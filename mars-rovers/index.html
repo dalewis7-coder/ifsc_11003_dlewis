@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="An overview of NASA's Mars Rover Program and the robotic explorers that have shaped our understanding of the Red Planet." />
+    <meta name="keywords" content="NASA, Mars, rover, Curiosity, Perseverance, Spirit, Opportunity, JPL, space exploration" />
+    <title>NASA Mars Rovers - Home</title>
+    <link rel="stylesheet" href="/mars-rovers/assets/css/styles.css" />
+</head>
+<body>
+
+    <header>
+        <img src="/mars-rovers/assets/img/nasa-logo.jpg" alt="NASA logo" />
+        <div>
+            <h1>NASA Mars Rovers</h1>
+            <p>Robotic Explorers on the Red Planet</p>
+        </div>
+        <button id="toggleBtn" onclick="toggleMode()">
+            Light Mode
+        </button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/mars-rovers/index.html" class="active">Home</a></li>
+            <li><a href="/mars-rovers/mission-history.html">Mission History</a></li>
+            <li><a href="/mars-rovers/faq.html">FAQ</a></li>
+            <li><a href="https://mars.nasa.gov" target="_blank">NASA Mars Website</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="hero">
+            <h2>Exploring the Red Planet</h2>
+            <p>
+                Since 1997, NASA has sent five rovers to the surface of Mars. These robotic explorers
+                have transformed our understanding of the Red Planet and are paving the way for
+                future human exploration.
+            </p>
+        </div>
+
+        <section>
+            <h2>About the Mars Rover Program</h2>
+            <p>
+                The Mars Exploration Program is a long-term effort by NASA to study Mars using
+                orbiters, landers, and rovers. Rovers are especially valuable because they can
+                move across the surface to study rocks, soil, and atmosphere up close.
+            </p>
+            <p>
+                Each mission has built on the lessons of the last. Rovers have grown larger and
+                more capable over time. The program is managed by NASA's Jet Propulsion Laboratory
+                (JPL) in Pasadena, California.
+            </p>
+            <p>
+                For more information, visit
+                <a href="https://mars.nasa.gov" target="_blank">mars.nasa.gov</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Featured Rovers</h2>
+
+            <article class="rover-card">
+                <img src="/mars-rovers/assets/img/curiosity.jpg" alt="Curiosity rover on Mars" />
+                <h3>Curiosity</h3>
+                <p><strong>Mission:</strong> Mars Science Laboratory</p>
+                <p><strong>Launched:</strong> November 26, 2011</p>
+                <p><strong>Landed:</strong> August 6, 2012 - Gale Crater</p>
+                <p>
+                    Curiosity is a car-sized rover that has been exploring Gale Crater since 2012.
+                    It confirmed that Mars once had conditions capable of supporting microbial life
+                    and remains active today.
+                </p>
+                <p><a href="/mars-rovers/mission-history.html#curiosity">Read more about Curiosity &rarr;</a></p>
+            </article>
+
+            <article class="rover-card">
+                <img src="/mars-rovers/assets/img/perseverance.jpg" alt="Perseverance rover on Mars" />
+                <h3>Perseverance</h3>
+                <p><strong>Mission:</strong> Mars 2020</p>
+                <p><strong>Launched:</strong> July 30, 2020</p>
+                <p><strong>Landed:</strong> February 18, 2021 - Jezero Crater</p>
+                <p>
+                    Perseverance is NASA's most advanced rover. It is searching for signs of ancient
+                    microbial life, caching rock samples for a future Earth return mission, and
+                    deployed the Ingenuity helicopter.
+                </p>
+                <p><a href="/mars-rovers/mission-history.html#perseverance">Read more about Perseverance &rarr;</a></p>
+            </article>
+
+            <article class="rover-card">
+                <img src="/mars-rovers/assets/img/opportunity.jpg" alt="Opportunity rover on Mars" />
+                <h3>Spirit and Opportunity</h3>
+                <p><strong>Mission:</strong> Mars Exploration Rover (MER)</p>
+                <p><strong>Launched:</strong> June and July 2003</p>
+                <p><strong>Landed:</strong> January 2004</p>
+                <p>
+                    Designed for 90 days, Spirit lasted over 6 years and Opportunity nearly 15.
+                    Together they drove over 45 km and confirmed that liquid water once existed on Mars.
+                </p>
+                <p><a href="/mars-rovers/mission-history.html#mer">Read more about Spirit and Opportunity &rarr;</a></p>
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Rover Comparison</h2>
+            <p>A side-by-side look at how each rover compares:</p>
+
+            <table>
+                <tr>
+                    <th>Rover</th>
+                    <th>Launch Year</th>
+                    <th>Landing Site</th>
+                    <th>Weight (kg)</th>
+                    <th>Power Source</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Sojourner</td>
+                    <td>1996</td>
+                    <td>Ares Vallis</td>
+                    <td>10.5</td>
+                    <td>Solar</td>
+                    <td>Mission Complete</td>
+                </tr>
+                <tr>
+                    <td>Spirit</td>
+                    <td>2003</td>
+                    <td>Gusev Crater</td>
+                    <td>185</td>
+                    <td>Solar</td>
+                    <td>Mission Complete</td>
+                </tr>
+                <tr>
+                    <td>Opportunity</td>
+                    <td>2003</td>
+                    <td>Meridiani Planum</td>
+                    <td>185</td>
+                    <td>Solar</td>
+                    <td>Mission Complete</td>
+                </tr>
+                <tr>
+                    <td>Curiosity</td>
+                    <td>2011</td>
+                    <td>Gale Crater</td>
+                    <td>899</td>
+                    <td>Nuclear (RTG)</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Perseverance</td>
+                    <td>2020</td>
+                    <td>Jezero Crater</td>
+                    <td>1,025</td>
+                    <td>Nuclear (RTG)</td>
+                    <td>Active</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>NASA Mars Rovers | Student Project</p>
+        <p>Contact: <a href="mailto:dalewis7@ualr.edu">dalewis7@ualr.edu</a></p>
+        <p class="disclaimer">
+            This website was created as a student project for educational purposes.
+            NASA is not affiliated with or endorsing this work.
+        </p>
+    </footer>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('light-mode');
+            var btn = document.getElementById('toggleBtn');
+            if (btn.textContent.trim() === 'Light Mode') {
+                btn.textContent = 'Dark Mode';
+            } else {
+                btn.textContent = 'Light Mode';
+            }
+        }
+    </script>
+
+</body>
+</html>

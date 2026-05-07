@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="Frequently asked questions about NASA's Mars rovers, the planet Mars, and the future of space exploration." />
+    <meta name="keywords" content="Mars FAQ, Mars rover questions, NASA Mars facts, space exploration questions" />
+    <title>FAQ - NASA Mars Rovers</title>
+    <link rel="stylesheet" href="/mars-rovers/assets/css/styles.css" />
+</head>
+<body>
+
+    <header>
+        <img src="/mars-rovers/assets/img/nasa-logo.jpg" alt="NASA logo" />
+        <div>
+            <h1>NASA Mars Rovers</h1>
+            <p>Robotic Explorers on the Red Planet</p>
+        </div>
+        <button id="toggleBtn" onclick="toggleMode()">
+            Light Mode
+        </button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/mars-rovers/index.html">Home</a></li>
+            <li><a href="/mars-rovers/mission-history.html">Mission History</a></li>
+            <li><a href="/mars-rovers/faq.html" class="active">FAQ</a></li>
+            <li><a href="https://mars.nasa.gov" target="_blank">NASA Mars Website</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <p>
+                Common questions about Mars and the rovers. Have another question?
+                <a href="mailto:dalewis7@ualr.edu">Send it our way</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>About Mars</h2>
+
+            <details class="faq-item">
+                <summary>Why is Mars red?</summary>
+                <p>
+                    Mars looks red because its soil and dust contain iron oxide, which is essentially
+                    rust. When wind lifts this reddish dust into the thin atmosphere, it gives the
+                    Martian sky a pinkish color as well.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How far away is Mars from Earth?</summary>
+                <p>
+                    The distance changes constantly as both planets orbit the Sun. At closest approach,
+                    Mars is about 54.6 million km away. At its farthest, it is over 400 million km.
+                    This variability is why Mars missions launch during specific windows every 26 months.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Does Mars have seasons?</summary>
+                <p>
+                    Yes. Mars has four seasons like Earth because of a similar axial tilt of about
+                    25 degrees. But since Mars takes 687 Earth days to orbit the Sun, each season
+                    lasts roughly twice as long as seasons on Earth.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Could Mars have supported life in the past?</summary>
+                <p>
+                    Scientists think it is possible. Evidence shows Mars had liquid water billions
+                    of years ago. Curiosity confirmed that Gale Crater once held a freshwater lake
+                    with chemistry suitable for microbial life. Whether life actually existed
+                    there remains one of science's biggest open questions.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What is the temperature on Mars?</summary>
+                <p>
+                    Mars is much colder than Earth on average. Temperatures range from about -125
+                    degrees Celsius near the poles in winter to around 20 degrees Celsius at the
+                    equator during summer. The average is roughly -60 degrees Celsius.
+                </p>
+            </details>
+
+        </section>
+
+        <section>
+            <h2>About the Rovers</h2>
+
+            <details class="faq-item">
+                <summary>How do rovers communicate with Earth?</summary>
+                <p>
+                    Rovers use NASA's Deep Space Network, a global system of large radio antennas
+                    in California, Spain, and Australia. They also relay data through Mars orbiters
+                    for higher bandwidth. Because Mars is so far away, signals take between 3 and
+                    22 minutes one way.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How do rovers get their power?</summary>
+                <p>
+                    Spirit and Opportunity used solar panels, which worked well but could be
+                    reduced by dust build-up and limited winter sunlight. Curiosity and Perseverance
+                    use a nuclear RTG, which converts heat from decaying plutonium into electricity.
+                    RTGs work day and night regardless of season or dust.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How fast can rovers drive?</summary>
+                <p>
+                    Rovers are very slow compared to vehicles on Earth. Curiosity's top speed is
+                    about 0.14 km/h, though it typically moves slower during science operations.
+                    Perseverance can cover about 200 meters per Martian day using improved
+                    autonomous navigation. A normal walking pace on Earth is about 5 km/h.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What happened to Spirit and Opportunity?</summary>
+                <p>
+                    Spirit became stuck in soft soil in 2009 and could not free itself. Contact was
+                    lost in March 2010. Opportunity survived until June 2018, when a global dust
+                    storm blocked its solar panels. NASA sent over 1,000 recovery commands before
+                    officially ending the mission in February 2019.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What is the Ingenuity helicopter?</summary>
+                <p>
+                    Ingenuity is a small 1.8 kg helicopter that rode to Mars strapped to the belly
+                    of Perseverance. On April 19, 2021, it made the first powered flight on another
+                    planet. It was designed for five test flights but completed over 70 before its
+                    final landing in early 2024.
+                </p>
+            </details>
+
+        </section>
+
+        <section>
+            <h2>The Future of Mars Exploration</h2>
+
+            <details class="faq-item">
+                <summary>Will Perseverance's rock samples come back to Earth?</summary>
+                <p>
+                    That is the goal of the Mars Sample Return campaign, a joint effort by NASA
+                    and the European Space Agency. Perseverance has been caching rock core samples
+                    since 2021. As of 2024, the mission's exact timeline was being revised due to
+                    engineering complexity and budget considerations.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Will humans ever go to Mars?</summary>
+                <p>
+                    NASA and companies like SpaceX are actively working toward crewed Mars missions.
+                    The biggest challenges are the six-to-nine-month one-way trip, radiation
+                    exposure, and complete life support self-sufficiency. Most realistic timelines
+                    place a first human landing no earlier than the late 2030s or 2040s.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Where can I follow current rover news?</summary>
+                <p>
+                    NASA's official site at
+                    <a href="https://mars.nasa.gov" target="_blank">mars.nasa.gov</a>
+                    posts mission updates and raw image releases. Free public domain images are
+                    available at
+                    <a href="https://images.nasa.gov" target="_blank">images.nasa.gov</a>.
+                    JPL also posts regular updates on its social media channels.
+                </p>
+            </details>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>NASA Mars Rovers | Student Project</p>
+        <p>Contact: <a href="mailto:dalewis7@ualr.edu">dalewis7@ualr.edu</a></p>
+        <p class="disclaimer">
+            This website was created as a student project for educational purposes.
+            NASA is not affiliated with or endorsing this work.
+        </p>
+    </footer>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('light-mode');
+            var btn = document.getElementById('toggleBtn');
+            if (btn.textContent.trim() === 'Light Mode') {
+                btn.textContent = 'Dark Mode';
+            } else {
+                btn.textContent = 'Light Mode';
+            }
+        }
+    </script>
+
+</body>
+</html>
