@@ -9,31 +9,44 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 600px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
-      color: #1a1a19;
+      background: #f4f4f6;
+      color: #222;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+
+    /* Added a container card for a cleaner, modern look */
+    .container {
+      max-width: 650px;
+      margin: 0 auto;
       background: #fff;
+      padding: 3rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     }
 
     h1 {
-      font-size: 22px;
-      font-weight: 500;
+      font-size: 26px;
+      font-weight: 600;
       margin-bottom: 0.25rem;
+      margin-top: 0;
     }
 
     h1 + p {
-      font-size: 14px;
-      color: #888;
+      font-size: 15px;
+      color: #666;
       margin-bottom: 2.5rem;
+      border-bottom: 2px solid #eaeaea;
+      padding-bottom: 1.5rem;
     }
 
     h2 {
-      font-size: 11px;
-      font-weight: 500;
+      font-size: 12px;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: #aaa;
+      letter-spacing: 0.08em;
+      color: #888;
       margin: 2rem 0 0.75rem;
     }
 
@@ -44,65 +57,117 @@
     }
 
     li {
-      border-top: 0.5px solid #eee;
+      border-bottom: 1px solid #f0f0f0;
     }
 
-    li:last-child {
-      border-bottom: 0.5px solid #eee;
+    li:first-child {
+      border-top: 1px solid #f0f0f0;
     }
 
     a {
       display: block;
-      padding: 0.6rem 0;
-      font-size: 14px;
-      color: #1a1a19;
+      padding: 0.75rem 0;
+      font-size: 15px;
+      color: #0b3d91; /* Subtle nod to your NASA project */
       text-decoration: none;
+      transition: color 0.2s ease, padding-left 0.2s ease;
     }
 
     a:hover {
-      color: #555;
+      color: #fc3d21;
+      padding-left: 5px; /* Nice interaction effect for a beginner */
+    }
+
+    /* Specific styles for the reading assignment */
+    #progressive-enhancement {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 2px solid #eaeaea;
+    }
+
+    #progressive-enhancement h2 {
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: normal;
+      color: #1a1a19;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    #progressive-enhancement p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 1.25rem;
+    }
+
+    #progressive-enhancement a {
+      display: inline;
+      padding: 0;
+      text-decoration: underline;
+    }
+    
+    #progressive-enhancement a:hover {
+      padding-left: 0;
     }
   </style>
 </head>
 <body>
 
-  <h1>Dax Lewis</h1>
-  <p>IFSC 1310 &mdash; Course Work</p>
+  <div class="container">
+    <h1>Dax Lewis</h1>
+    <p>IFSC 1310 &mdash; Course Work</p>
 
-  <nav>
+    <nav>
+      <h2>Assignments</h2>
+      <ul>
+        <li><a href="prototype/index.html">First Assignment</a></li>
+        <li><a href="css-demo/index.html">CSS Demo</a></li>
+        <li><a href="assets/img/cssdiner.png">CSS Diner</a></li>
+        <li><a href="assets/img/flexboxfroggy.png">Flexbox Froggy</a></li>
+        <li><a href="assets/img/gridgarden.png">Grid Garden</a></li>
+        <li><a href="slick-demo/index.html">Cycle Lab</a></li>
+      </ul>
 
-    <h2>Assignments</h2>
-    <ul>
-      <li><a href="prototype/index.html">First Assignment</a></li>
-      <li><a href="css-demo/index.html">CSS Demo</a></li>
-      <li><a href="assets/img/cssdiner.png">CSS Diner</a></li>
-      <li><a href="assets/img/flexboxfroggy.png">Flexbox Froggy</a></li>
-      <li><a href="assets/img/gridgarden.png">Grid Garden</a></li>
-      <li><a href="slick-demo/index.html">Cycle Lab</a></li>
-    </ul>
+      <h2>Nasa Project</h2>
+      <ul>
+        <li><a href="mars-rovers-draft/index.html">Mars-Rovers-Draft</a></li>
+        <li><a href="mars-rovers/index.html">Mars-Rovers</a></li>
+      </ul>
 
-    <h2>Nasa Project</h2>
-    <ul>
-      <li><a href="/mars-rovers-draft/index.html">Mars-Rovers-Draft</a></li>
-      <li><a href="/mars-rovers/index.html">Mars-Rovers</a></li>
-    </ul>
-    <h2>Positioning Lab</h2>
-    <ul>
-      <li><a href="postitioning-lab/float-1.html">Float 1</a></li>
-      <li><a href="postitioning-lab/float-2.html">Float 2</a></li>
-      <li><a href="postitioning-lab/absolute-1.html">Absolute 1</a></li>
-      <li><a href="postitioning-lab/absolute-2.html">Absolute 2</a></li>
-    </ul>
+      <h2>Positioning Lab</h2>
+      <ul>
+        <li><a href="postitioning-lab/float-1.html">Float 1</a></li>
+        <li><a href="postitioning-lab/float-2.html">Float 2</a></li>
+        <li><a href="postitioning-lab/absolute-1.html">Absolute 1</a></li>
+        <li><a href="postitioning-lab/absolute-2.html">Absolute 2</a></li>
+      </ul>
 
-    <h2>CSS Grid Layout Lab</h2>
-    <ul>
-      <li><a href="css-grid-lab/grid-two-col-equal.html">Two Column Equal</a></li>
-      <li><a href="css-grid-lab/grid-two-col-left.html">Two Column Left</a></li>
-      <li><a href="css-grid-lab/grid-two-col-right.html">Two Column Right</a></li>
-      <li><a href="css-grid-lab/grid-two-col-stacked.html">Two Column Stacked</a></li>
-    </ul>
+      <h2>CSS Grid Layout Lab</h2>
+      <ul>
+        <li><a href="css-grid-lab/grid-two-col-equal.html">Two Column Equal</a></li>
+        <li><a href="css-grid-lab/grid-two-col-left.html">Two Column Left</a></li>
+        <li><a href="css-grid-lab/grid-two-col-right.html">Two Column Right</a></li>
+        <li><a href="css-grid-lab/grid-two-col-stacked.html">Two Column Stacked</a></li>
+      </ul>
+    </nav>
 
-  </nav>
+    <section id="progressive-enhancement">
+      <h2>Progressive Enhancement</h2>
+      
+      <p>After reading Aaron Gustafso article I think i progressive enhancement as a content-first strategy for web development. Instead of building a site exclusively for the newest browsers and hoping it works everywhere, you start with a solid foundation of core content marked up in  HTML. Using Gustafson's Peanut M&M analogy this core content is the "peanut". From there, you progressively layer on the "chocolate" of CSS for visual styling, and finally add the "hard candy shell" of JavaScript for rich interactivity. If a user's browser or device cannot process the CSS or JavaScript they still are able to access the information without the page breaking.</p>
+
+      <p>This is super important in web development because the web is accessed on a wide range of devices and networks. JavaScript can easily fail to load due to network drops, caching, or errors. By treating advanced functionality as an optional enhancement rather than a strict requirement, devs ensure that websites remain accessible and fast. It prevents a "blank white screen" scenario and makes sure that everyone receives a minimum viable experience.</p>
+
+    <section id="course-reflection">
+      <h2>Semester and Project Reflection</h2>
+      
+      <p>Reflecting on my experience in IFSC 1310 this semester I found the transition into front-end web development to be a rewarding challenge. Because my professional background is in IT infrastructure and vulnerability management I am used to looking at systems from a security and administration perspective. Getting into HTML and CSS required me to shift gears and think about user experience, accessibility, and visual structure. What I think i've done particularly well this semester was grasping the strict syntax and validation requirements. Structuring semantic HTML5 felt logical to me.</p>
+
+      <p>If I had to start this project or the semester over, I would definitely approach file pathing and scope differently from the beginning. Early on, I fell into the trap of using absolute paths like /mars-rovers/assets which caused major headaches when thinking about deploying to GitHub Pages. I also initially tried to over-engineer my site by throwing in advanced accessibility and CSS pseudo-elements before I mastered the core concepts. If I were to do it again, I would stick strictly to relative paths (`./`) from day one and focus purely on getting the standard semantic tags to do the heavy lifting before adding any extra bells and whistles.</p>
+
+      <p>The feedback I received on my project drafts was incredibly helpful in course-correcting. Specifically, it was pointed out that I had a broken image path for the Perseverance rover, inconsistent email links in my footer, and markup that was too complex. To address these issues, I went back through my directory structure and standardized all my links to relative paths to guarantee they wouldn't break. I also chose to chnage feedback regarding code complexity. I stripped out unnecessary tags and screen-reader skip links. While I know those are important for modern web development, removing them allowed me to make sure I accomplished all the task in a functional webpage without extra fluff.</p>
+  </div>
 
 </body>
 </html>
